@@ -17,7 +17,8 @@
 <%# user is not logged in, show signup and login links %>
 <% else %>
 	<%= link_to 'Sign In', new_user_session_path %> |
-	<%= link_to 'Register Now', new_user_registration_path %>
+	<%= link_to 'Register Now', new_user_registration_path %> |
+	<%= link_to 'Post', new_post_path %>
 <% end %>
 
 <%= yield %>
