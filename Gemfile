@@ -5,7 +5,15 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3', '1.3.5'
+end
+
+##deploy to heroku
+group :production do
+  gem 'pg', '0.12.2'
+end
+
 gem 'devise'
 
 
@@ -37,3 +45,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
